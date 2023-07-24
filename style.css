@@ -1,0 +1,81 @@
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: black;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+#outerhome {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: aliceblue;
+}
+
+.outeraboutsection {
+  padding: 15px;
+  background-color: #c1c9c3;
+}
+
+#aboutbody {
+  display: flex;
+  align-items: center;
+}
+
+#outerskills {
+  padding: 15px;
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+
+.outereducationsection {
+  background-color: rgb(238, 242, 245);
+  padding: 15px;
+}
+
+#education-clg-outerrow {
+  display: flex;
+  align-items: center;
+}
+
+.outerprojects {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(168, 192, 192);
+}
+
+.outercontact {
+  padding: 15px;
+  align-items: center;
+  background-color: rgb(238, 242, 245);
+}
+
+.outerfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 1, 46);
+  color: white;
+  padding: 15px;
+}
+
+#Projectssection .outerprojects #card:hover {
+  transform: scale(1.1);
+}
+
+.outerfooter .row h5 i:hover,
+#outerhome .row h5 i:hover {
+  transform: scale(1.5);
+}
